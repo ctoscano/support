@@ -1,0 +1,79 @@
+
+
+body {
+  background: $gray-lighter;
+}
+
+.body iframe {
+  width: 100%;
+  height: 650px;
+}
+.body {
+  @include box-shadow(#000 0px 0px 30px);
+  position: relative;
+}
+
+.header, .navbar {
+  margin-bottom: 0px !important;
+}
+.navbar {
+  border-bottom: 0px;
+}
+
+.top, .bottom {
+  background: #FFF;
+  margin-left: 50px;
+  margin-right: 50px;
+
+  border-left: 1px solid $gray-light;
+  border-right: 1px solid $gray-light;
+  padding-top:100px;
+
+}
+
+div {
+
+}
+//@source: http://stackoverflow.com/questions/19601245/create-a-circular-button-in-bs3
+span.bg-circle {
+  background: $brand-primary;
+  @include border-radius(.8em);
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  text-align: center;
+  height: 1.6em;
+  width: 1.6em;
+}
+
+.submit123 {
+  margin-top: 30px;
+}
+
+.submit123 .btn {
+  min-width: 150px;
+}
+
+.bottom img {
+  max-width: 100%;
+}
+
+.top {
+  margin-top: 30px;
+  border-top: 1px solid $gray-light;
+  padding-bottom:100px;
+}
+
+.top h1, .bottom h3 {
+  margin-top: 0;
+}
+.bottom.last{
+  border-bottom: 1px solid $gray-light;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.help-options {
+  padding: 0 20px;
+}
