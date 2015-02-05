@@ -21,20 +21,82 @@
 
     <!-- Add your site or application content here -->
     <div class="top">
-        <div class="row">
+        <div class="hidden row">
             <div class="col-md-4">
                 <img class="pull-right" src="./images/darts.png" width="192"/>
             </div>
             <div class="col-md-4">
                 <h1>Hi, I'm Nick.</h1>
                 <p>
-                    I messed up in high school <br/>
-                    but now I'm working hard <br/>
+                    I messed up in high school <br class="hidden-sx hidden-sm"/>
+                    but now I'm working hard <br class="hidden-sx hidden-sm"/>
                     to get into a good college.
                 </p>
                 <div>
                     <a href="#awesome" class="btn btn-default">Something Awesome</a>
                     <a href="#contribute" class="btn btn-default">How You Can Help</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden explanation row">
+            <div class="col-md-4 col-md-offset-2">
+                <h3>My best shot</h3>
+                <p>
+                    Only 3% of applicants get into Hack Reactor, and 98% of graduates get jobs in tech. I got in.
+                </p>
+                <p>
+                    Hack Reactor will help me get a job, and I hope, help me get into a good college.
+                </p>
+                <p>
+                    I'm auditing calculus and physics classes at Berkeley. I'm retaking the SAT's. I'm meditating
+                    and reading. I'm doing everything I can to take advantage of every opportunity in my reach.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h3>My Gift to You</h3>
+                <p>
+                    I built this web app to make educational videos more effective by making flash cards
+                    for the parts I want to remember.
+                </p>
+                <p>
+                    As you watch, the flash card about that part of the video will be highlighted. You can even
+                    click on a card to see that part of the video.
+                </p>
+                <p>
+                    Please take a look and tell me what you think!!!
+                </p>
+            </div>
+
+        </div>
+        <div class="">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="pull-right">
+                        <img class="pull-left profile" src="./images/darts.png" height="120px"/>
+                        <div style="overflow: hidden">
+                            <h1>Hi, I'm Nick.</h1>
+                            <p>
+                                I clowned around in high school <br class="hidden-sx hidden-sm"/>
+                                but now I'm working hard <br class="hidden-sx hidden-sm"/>
+                                to get into a good college.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3>I made this for you</h3>
+                    <p>
+                        I built this web app to make educational videos better by adding flash cards
+                        for the parts I want to remember.
+                    </p>
+                    <p>
+                        As you watch, the app will show you the flash card that goes with that part of the video.
+                        <strong>Click a card</strong> to jump to that part of the video.
+                    </p>
+                    <p>
+                        Please take a look and tell me what you think!!!
+                    </p>
                 </div>
             </div>
         </div>
@@ -46,29 +108,31 @@
 
     <div id="contribute" class="bottom">
         <div class="row">
-            <div class="col-md-4">
-                <img class="pull-right" src="./images/crab.png" width="200"/>
-            </div>
-            <div class="col-md-4">
-                <h3>So, what did you think?</h3>
-                <p>
-                    I built this app to help me learn to code JavaScript, <br/>
-                    and to help me prepare for my interview for HackReactor.
-                </p><p>
-                    They have a 3% acceptance rate, and I got in :)
-                </p><p>
-                    CrashCourse has helped me prepare to be an <br/>
-                    "informed, engaged, productive citizen of the world." <br/>
-                    I wanted to do something to give back.
-                </p>
-                <p>
+            <div class="col-md-8">
+                <div class="pull-right">
+                    <img class="pull-left profile" src="./images/crab.png"/>
+                    <div style="overflow: hidden">
+                        <h3>So, what did you think?</h3>
+                        <p>
+                            I built this app to help me learn to code JavaScript, <br class="hidden-sx hidden-sm"/>
+                            and to help me prepare for my interview for <strong>Hack Reactor</strong>.
+                        </p><p>
+                            They have a 3% acceptance rate, and I got in :)
+                        </p><p>
+                            CrashCourse has helped me prepare to be an <br class="hidden-sx hidden-sm"/>
+                            "informed, engaged, productive citizen of the world." <br class="hidden-sx hidden-sm"/>
+                            I wanted to do something to give back.
+                        </p>
+                        <p>
 
-                </p>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-        <br/>
-        <h3 class="text-center">If you like what I'm doing, <br/>there are 3 ways you can really help me out.</h3>
-        <br/>
+        <br class="hidden-sx hidden-sm"/>
+        <h2 class="text-center">If you like what I'm doing, <br class="hidden-sx hidden-sm"/>there are 3 ways you can really help me out.</h2>
+        <br class="hidden-sx hidden-sm"/>
         <div class="row help-options">
             <div class="help-option col-md-4">
                 <div>
@@ -81,16 +145,16 @@
                 </p>
                 <form class="inline-form" action="">
                     <div class="form-group">
-                        <label class="sr-only" for="formMessage">Email address</label>
-                        <textarea class="form-control" id="formMessage" placeholder="ex. Keep it up! What else did you find that was useful?"></textarea>
-                    </div>
-                    <div class="form-group">
                         <label class="sr-only" for="formName">Name</label>
                         <input type="text" class="form-control" id="formName" placeholder="ex. Nicolas Toscano">
                     </div>
                     <div class="form-group">
                         <label class="sr-only" for="exampleInputEmail3">Email address</label>
                         <input type="email" class="form-control" id="exampleInputEmail3" placeholder="ex. nicolas.toscano@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="formMessage">Email address</label>
+                        <textarea class="form-control" id="formMessage" placeholder="ex. Keep it up! What else did you find that was useful?"></textarea>
                     </div>
                 </form>
             </div>
@@ -110,7 +174,7 @@
                         <label for="formPledge">Pledge</label>
                         <div class="input-group">
                             <div class="input-group-addon">$</div>
-                            <input type="text" class="form-control" id="formPledge" placeholder="ex. $10.00">
+                            <input type="text" class="form-control" id="formPledge" placeholder="ex. $10.00 or $0">
                         </div>
                     </div>
                     <div class="radio">
@@ -181,7 +245,7 @@
                     </p>
                 </div>
             </div>
-            <br/>
+            <br class="hidden-sx hidden-sm"/>
             <div class="row">
                 <div class="col-md-6 text-center">
                     <img src="./images/hrhq-logo@2x.png" alt=""/>
