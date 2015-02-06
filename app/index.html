@@ -99,10 +99,20 @@
                             <strong>Click a card</strong> to jump to that part of the video.
                         </p>
                         <p>
-                            Please take a look and tell me what you think!!!
+                            Please tell me what you think!!!
                         </p>
                     </div>
                 </div>
+            </div>
+            <div>
+                <h3 class="text-center">
+                    On this page you can
+                </h3>
+                <h3 class="text-center">
+                    <span class="bg-circle">1</span> Check out the app I made
+                    <span class="bg-circle">2</span> Help me to go college
+                    <span class="bg-circle">3</span> See what I learned to build this app
+                </h3>
             </div>
         </div>
     </div>
@@ -111,7 +121,7 @@
         <iframe src="http://ntoscano.github.io/membrightVideoPlayer/app/index.html" frameborder="0"></iframe>
     </div>
 
-    <div id="contribute" class="bottom">
+    <div id="contribute" class="bottom" ng-controller="PledgeCtrl">
         <div class="center-block container">
             <div class="text-center visible-xs visible-sm">
                 <img class="profile" src="./images/crab.png"/>
@@ -138,7 +148,7 @@
         <br class="hidden-xs hidden-sm"/>
         <h2 class="text-center">If you like what I'm doing, <br class="hidden-xs hidden-sm"/>there are 3 ways you can really help me out.</h2>
         <br class="hidden-xs hidden-sm"/>
-        <div class="row help-options">
+        <form name="pledgeForm" novalidate="" class="row help-options">
             <div class="help-option col-md-4">
                 <div>
                     <h4><span class="bg-circle">1</span> Offer Encouragement</h4>
@@ -146,20 +156,24 @@
                 <p>
                     Tell me what you think! Wish me luck! Ask me to share what I'm learning about. Tell me you want me keep you up to date.
                 </p>
-                <form class="inline-form" action="">
+                <div class="inline-form" action="">
                     <div class="form-group">
                         <label class="sr-only" for="formName">Name</label>
-                        <input type="text" class="form-control" id="formName" placeholder="ex. Nicolas Toscano">
+                        <input ng-model="pledge.encourage.name" type="text" class="form-control" id="formName" placeholder="ex. Nicolas Toscano">
                     </div>
                     <div class="form-group">
                         <label class="sr-only" for="exampleInputEmail3">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail3" placeholder="ex. nicolas.toscano@gmail.com">
+                        <input ng-model="pledge.encourage.email" type="email" required="" name="email" class="form-control" id="exampleInputEmail3" placeholder="ex. nicolas.toscano@gmail.com">
+                        <p class="bg-warning" ng-show="showValidation && pledgeForm.email.$error.required">
+                          I need your email to get back to you. I promise not to spam. </p>
+                        <p class="bg-warning" ng-show="showValidation && pledgeForm.email.$error.email">
+                          This doesn't look like an email.</p>
                     </div>
                     <div class="form-group">
-                        <label class="sr-only" for="formMessage">Email address</label>
-                        <textarea class="form-control" id="formMessage" placeholder="ex. Keep it up! What else did you find that was useful?"></textarea>
+                        <label class="sr-only" for="formMessage">Message</label>
+                        <textarea ng-model="pledge.encourage.msg" class="form-control" id="formMessage" placeholder="ex. Keep it up! What else did you find that was useful? I have an idea..."></textarea>
                     </div>
-                </form>
+                </div>
             </div>
             <div class="help-option col-md-4">
                 <div>
@@ -172,27 +186,31 @@
                     can get a job. The more supporters I have, the better story I'll have
                     for my college application :)
                 <p>
-                <form class="form-inline">
+                <div class="form-inline">
                     <div class="form-group">
                         <label for="formPledge">Pledge</label>
                         <div class="input-group">
                             <div class="input-group-addon">$</div>
-                            <input type="text" class="form-control" id="formPledge" placeholder="ex. $10.00 or $0">
+                            <input ng-bind="pledge.support.value" type="text" class="form-control" id="formPledge" placeholder="ex. $10.00 or $0">
                         </div>
                     </div>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                            "OK, I can help lend you some cash!"
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                            "Here is a gift! Put it to good use."
-                        </label>
-                    </div>
-                </form>
+                    <p>
+                        <div class="radio">
+                            <label>
+                                <input ng-bind="pledge.support.type" type="radio" name="optionsRadios" id="optionsRadios1" value="lend" checked>
+                                "OK, I can help lend you some cash!"
+                            </label>
+                        </div>
+                    </p>
+                    <p>
+                        <div class="radio">
+                            <label>
+                                <input ng-bind="pledge.support.type" type="radio" name="optionsRadios" id="optionsRadios2" value="donate">
+                                "Here is a gift! Put it to good use."
+                            </label>
+                        </div>
+                    </p>
+                </div>
             </div>
             <div class="help-option col-md-4">
                 <div>
@@ -204,19 +222,24 @@
                     If there is someone you think would like what I built, or you just want to
                     help me get more supporters, please share this page.
                 <p>
-                <form class="form-inline">
+                <div class="form-inline">
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" value="">
+                            <input ng-bind="pledge.promote.value" type="checkbox" value="true">
                             "OK, send me an email I can forward."
                         </label>
                     </div>
-                </form>
+                </div>
             </div>
-        </div>
+        </form>
         <div class="center-block container submit123 text-center">
             <span class="bg-circle">1</span>... <span class="bg-circle">2</span>... <span class="bg-circle">3</span>...
-            <button class="btn btn-success">GO!!!</button>
+            <button class="btn btn-success" ng-click="go(pledge)">GO!!!</button>
+        </div>
+        <div class="center-block container text-center" ng-show="showThanks">
+            <h1>Thank you!</h1>
+            <p>I'll try reaching you at {{ email }}. :)</p>
+            <img src="images/highfive1.gif" alt=""/>
         </div>
     </div>
 
@@ -341,6 +364,10 @@
        ga('send', 'pageview');
     </script>
 
+    <!-- start Mixpanel --><script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+        for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+    mixpanel.init("27c7a3cc932c81b1fa58dc9a81c8b423");</script><!-- end Mixpanel -->
+
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -353,6 +380,8 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+    <script src="bower_components/angularfire/dist/angularfire.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -360,6 +389,7 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/pledge.js"></script>
         <!-- endbuild -->
 </body>
 </html>
