@@ -92,3 +92,23 @@ img.profile {
   background: #2e6da4;
   color: white;
 }
+
+@media (max-width: $screen-md-min) {
+  .profile-no-float-md {
+    float: none !important;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  .top {
+    margin-top: 5px;
+    padding-top: 25px;
+  }
+  .top, .bottom {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 25px;
+  }
+  .body {
+    margin: 0 5px;
+  }
+}

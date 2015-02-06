@@ -20,7 +20,7 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="top">
+    <div class="top container-fluid">
         <div class="hidden row">
             <div class="col-md-4">
                 <img class="pull-right" src="./images/darts.png" width="192"/>
@@ -28,8 +28,8 @@
             <div class="col-md-4">
                 <h1>Hi, I'm Nick.</h1>
                 <p>
-                    I messed up in high school <br class="hidden-sx hidden-sm"/>
-                    but now I'm working hard <br class="hidden-sx hidden-sm"/>
+                    I messed up in high school <br class="hidden-xs hidden-sm"/>
+                    but now I'm working hard <br class="hidden-xs hidden-sm"/>
                     to get into a good college.
                 </p>
                 <div>
@@ -71,32 +71,37 @@
         </div>
         <div class="">
             <div class="row">
-                <div class="col-md-5">
-                    <div class="pull-right">
-                        <img class="pull-left profile" src="./images/darts.png" height="120px"/>
+                <div class="col-md-5 clearfix">
+                    <div class="visible-xs text-center">
+                        <img src="./images/darts.png" />
+                    </div>
+                    <div class="pull-right profile-no-float-md">
+                        <img class="hidden-xs pull-left profile" src="./images/darts.png" height="120px"/>
                         <div style="overflow: hidden">
                             <h1>Hi, I'm Nick.</h1>
                             <p>
-                                I clowned around in high school <br class="hidden-sx hidden-sm"/>
-                                but now I'm working hard <br class="hidden-sx hidden-sm"/>
+                                I clowned around in high school <br class=""/>
+                                but now I'm working hard <br class=""/>
                                 to get into a good college.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <h3>I made this for you</h3>
-                    <p>
-                        I built this web app to make educational videos better by adding flash cards
-                        for the parts I want to remember.
-                    </p>
-                    <p>
-                        As you watch, the app will show you the flash card that goes with that part of the video.
-                        <strong>Click a card</strong> to jump to that part of the video.
-                    </p>
-                    <p>
-                        Please take a look and tell me what you think!!!
-                    </p>
+                <div class="col-md-7">
+                    <div class="center-block" style="max-width: 450px">
+                        <h3>I made this for You</h3>
+                        <p>
+                            I built this web app to make educational videos better by adding flash cards
+                            for the parts I want to remember.
+                        </p>
+                        <p>
+                            As you watch, the app will show you the flash card that goes with that part of the video.
+                            <strong>Click a card</strong> to jump to that part of the video.
+                        </p>
+                        <p>
+                            Please take a look and tell me what you think!!!
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -107,36 +112,36 @@
     </div>
 
     <div id="contribute" class="bottom">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="pull-right">
-                    <img class="pull-left profile" src="./images/crab.png"/>
-                    <div style="overflow: hidden">
-                        <h3>So, what did you think?</h3>
-                        <p>
-                            I built this app to help me learn to code JavaScript, <br class="hidden-sx hidden-sm"/>
-                            and to help me prepare for my interview for <strong>Hack Reactor</strong>.
-                        </p><p>
-                            They have a 3% acceptance rate, and I got in :)
-                        </p><p>
-                            CrashCourse has helped me prepare to be an <br class="hidden-sx hidden-sm"/>
-                            "informed, engaged, productive citizen of the world." <br class="hidden-sx hidden-sm"/>
-                            I wanted to do something to give back.
-                        </p>
-                        <p>
+        <div class="center-block container">
+            <div class="text-center visible-xs visible-sm">
+                <img class="profile" src="./images/crab.png"/>
+            </div>
+            <img class="pull-left profile hidden-xs hidden-sm" src="./images/crab.png"/>
+            <div style="overflow: hidden">
+                <h3>So, what did you think?</h3>
+                <p>
+                    I built this app to help me learn to code JavaScript, <br class="hidden-xs hidden-sm"/>
+                    and to help me prepare for my interview for <strong>Hack Reactor</strong>.
+                </p><p>
+                    They have a 3% acceptance rate, and I got in :)
+                </p><p>
+                    CrashCourse has helped me prepare to be an <br class="hidden-xs hidden-sm"/>
+                    "informed, engaged, productive citizen of the world." <br class="hidden-xs hidden-sm"/>
+                    I wanted to do something to give back.
+                </p>
+                <p>
 
-                        </p>
-                    </div>
-                </div>
+                </p>
             </div>
         </div>
-        <br class="hidden-sx hidden-sm"/>
-        <h2 class="text-center">If you like what I'm doing, <br class="hidden-sx hidden-sm"/>there are 3 ways you can really help me out.</h2>
-        <br class="hidden-sx hidden-sm"/>
+        <div class="clearfix"></div>
+        <br class="hidden-xs hidden-sm"/>
+        <h2 class="text-center">If you like what I'm doing, <br class="hidden-xs hidden-sm"/>there are 3 ways you can really help me out.</h2>
+        <br class="hidden-xs hidden-sm"/>
         <div class="row help-options">
             <div class="help-option col-md-4">
                 <div>
-                    <h4><span class="bg-circle">1</span> Encourage</h4>
+                    <h4><span class="bg-circle">1</span> Offer Encouragement</h4>
                 </div>
                 <p>
                     If you want to hear more
@@ -160,7 +165,7 @@
             </div>
             <div class="help-option col-md-4">
                 <div>
-                    <h4><span class="bg-circle">2</span> Support</h4>
+                    <h4><span class="bg-circle">2</span> Lend Support</h4>
                 </div>
                 <p>
                     I have until April 1st, 2015 to come up with $17,780.
@@ -193,7 +198,7 @@
             </div>
             <div class="help-option col-md-4">
                 <div>
-                    <h4><span class="bg-circle">3</span> Promote</h4>
+                    <h4><span class="bg-circle">3</span> Promote Learning</h4>
                 </div>
                 <p>
                     I want to share what I am learning with as many people as possible.
@@ -212,13 +217,9 @@
                 </form>
             </div>
         </div>
-        <div>
-            <div class="row submit123">
-                <div class="col-md-offset-4 col-md-4">
-                    <span class="bg-circle">1</span>... <span class="bg-circle">2</span>... <span class="bg-circle">3</span>...
-                    <button class="btn btn-success">GO!!!</button>
-                </div>
-            </div>
+        <div class="center-block container submit123 text-center">
+            <span class="bg-circle">1</span>... <span class="bg-circle">2</span>... <span class="bg-circle">3</span>...
+            <button class="btn btn-success">GO!!!</button>
         </div>
     </div>
 
@@ -245,7 +246,7 @@
                     </p>
                 </div>
             </div>
-            <br class="hidden-sx hidden-sm"/>
+            <br class="hidden-xs hidden-sm"/>
             <div class="row">
                 <div class="col-md-6 text-center">
                     <img src="./images/hrhq-logo@2x.png" alt=""/>
