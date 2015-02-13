@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -21,54 +21,6 @@
 
     <!-- Add your site or application content here -->
     <div class="top container-fluid">
-        <div class="hidden row">
-            <div class="col-md-4">
-                <img class="pull-right" src="./images/darts.png" width="192"/>
-            </div>
-            <div class="col-md-4">
-                <h1>Hi, I'm Nick.</h1>
-                <p>
-                    I messed up in high school <br class="hidden-xs hidden-sm"/>
-                    but now I'm working hard <br class="hidden-xs hidden-sm"/>
-                    to get into a good college.
-                </p>
-                <div>
-                    <a href="#awesome" class="btn btn-default">Something Awesome</a>
-                    <a href="#contribute" class="btn btn-default">How You Can Help</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="hidden explanation row">
-            <div class="col-md-4 col-md-offset-2">
-                <h3>My best shot</h3>
-                <p>
-                    Only 3% of applicants get into Hack Reactor, and 98% of graduates get jobs in tech. I got in.
-                </p>
-                <p>
-                    Hack Reactor will help me get a job, and I hope, help me get into a good college.
-                </p>
-                <p>
-                    I'm auditing calculus and physics classes at Berkeley. I'm retaking the SAT's. I'm meditating
-                    and reading. I'm doing everything I can to take advantage of every opportunity in my reach.
-                </p>
-            </div>
-            <div class="col-md-4">
-                <h3>My Gift to You</h3>
-                <p>
-                    I built this web app to make educational videos more effective by making flash cards
-                    for the parts I want to remember.
-                </p>
-                <p>
-                    As you watch, the flash card about that part of the video will be highlighted. You can even
-                    click on a card to see that part of the video.
-                </p>
-                <p>
-                    Please take a look and tell me what you think!!!
-                </p>
-            </div>
-
-        </div>
         <div class="">
             <div class="row">
                 <div class="col-md-5 clearfix">
@@ -108,11 +60,24 @@
                 <h3 class="text-center">
                     On this page you can
                 </h3>
-                <h3 class="text-center">
-                    <span class="bg-circle">1</span> Check out the app I made
-                    <span class="bg-circle">2</span> Help me to go college
-                    <span class="bg-circle">3</span> See what I learned to build this app
-                </h3>
+
+              <h3 class="text-center hidden-xs">
+                <span class="bg-circle">1</span> <a href="#awesome">Check out my app</a>
+                <span class="bg-circle">2</span> <a href="#contribute">Help me go to college</a>
+                <span class="bg-circle">3</span> <a href="#tools">See what I learned to build this app</a>
+              </h3>
+
+              <div class="visible-xs">
+                  <h4 class="instruction">
+                    <span class="bg-circle">1</span> <a href="#awesome">Check out my app</a>
+                  </h4>
+                  <h4 class="instruction">
+                    <span class="bg-circle">2</span> <a href="#contribute">Help me go to college</a>
+                  </h4>
+                  <h4 class="instruction">
+                    <span class="bg-circle">3</span> <a href="#tools">See what I learned to build this app</a>
+                  </h4>
+              </div>
             </div>
         </div>
     </div>
@@ -290,7 +255,7 @@
     <div class="bottom text-center">
         <img src="./images/harvard_quote.png" alt=""/>
     </div>
-    <div class="bottom about last">
+    <div id="tools" class="bottom about last">
         <div class="container">
             <h3>Tools and Tech</h3>
             <div class="row">
@@ -380,9 +345,9 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
     <script src="bower_components/firebase/firebase.js"></script>
     <script src="bower_components/angularfire/dist/angularfire.min.js"></script>
-    <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->

@@ -93,6 +93,12 @@ img.profile {
   color: white;
 }
 
+
+.text-center .instruction {
+  display: inline-block;
+  white-space: nowrap;
+}
+
 @media (max-width: $screen-md-min) {
   .profile-no-float-md {
     float: none !important;
@@ -111,4 +117,11 @@ img.profile {
   .body {
     margin: 0 5px;
   }
+  .text-center .instruction {
+    display: block;
+    white-space: pre-wrap;
+    font-size: .8em;
+    text-align: left;
+  }
 }
+
