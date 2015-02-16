@@ -1,0 +1,15 @@
+
+img.profile {
+  margin-right: 10px;
+}
+
+@media (max-width: $screen-md-min) {
+  .profile-no-float-md {
+    float: none !important;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  img.profile {
+    margin-right: 0px;
+  }
+}

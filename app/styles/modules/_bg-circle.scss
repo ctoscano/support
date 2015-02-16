@@ -1,0 +1,12 @@
+//@source: http://stackoverflow.com/questions/19601245/create-a-circular-button-in-bs3
+span.bg-circle {
+  background: $brand-primary;
+  border-radius: .8em;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  text-align: center;
+  height: 1.6em;
+  width: 1.6em;
+}

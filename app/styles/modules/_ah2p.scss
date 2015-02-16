@@ -1,0 +1,14 @@
+a.ah2p, a.ah2p:hover {
+  color: $text-color;
+  text-decoration: none;
+  display: block;
+  padding: 1px 10px;
+}
+
+a.ah2p:hover {
+  background-color: $gray-lighter;
+}
+
+a.ah2p span.target {
+  text-decoration: underline;
+}

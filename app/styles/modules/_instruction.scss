@@ -1,0 +1,13 @@
+.instruction {
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+}
+
+@media (max-width: $screen-sm-min) {
+  .instruction {
+    margin-right: 0px;
+    float: left;
+    text-align: left;
+  }
+}

@@ -14,13 +14,6 @@ body {
   margin: 0 35px;
 }
 
-.header, .navbar {
-  margin-bottom: 0px !important;
-}
-.navbar {
-  border-bottom: 0px;
-}
-
 .top, .bottom {
   background: #FFF;
   margin-left: 50px;
@@ -30,30 +23,6 @@ body {
   border-right: 1px solid $gray-light;
   padding-top:80px;
 
-}
-
-div {
-
-}
-//@source: http://stackoverflow.com/questions/19601245/create-a-circular-button-in-bs3
-span.bg-circle {
-  background: $brand-primary;
-  @include border-radius(.8em);
-  color: #ffffff;
-  display: inline-block;
-  font-weight: bold;
-  line-height: 1.6em;
-  text-align: center;
-  height: 1.6em;
-  width: 1.6em;
-}
-
-.submit123 {
-  margin-top: 30px;
-}
-
-.submit123 .btn {
-  min-width: 150px;
 }
 
 .bottom img {
@@ -73,38 +42,13 @@ span.bg-circle {
   margin: 25px 15px;
 }
 
-img.profile {
-  margin-right: 10px;
-}
-
-.bottom.last{
+.bottom.last {
   border-bottom: 1px solid $gray-light;
   padding-bottom: 50px;
   margin-bottom: 50px;
 }
 
-.help-options {
-  padding: 0 20px;
-}
-
-.banner {
-  height: 200px;
-  background: #2e6da4;
-  color: white;
-}
-
-
-.text-center .instruction {
-  display: inline-block;
-  white-space: nowrap;
-}
-
 @media (max-width: $screen-md-min) {
-  .profile-no-float-md {
-    float: none !important;
-    max-width: 450px;
-    margin: 0 auto;
-  }
   .top {
     margin-top: 5px;
     padding-top: 25px;
@@ -117,11 +61,13 @@ img.profile {
   .body {
     margin: 0 5px;
   }
-  .text-center .instruction {
-    display: block;
-    white-space: pre-wrap;
-    font-size: .8em;
-    text-align: left;
-  }
 }
 
+
+.container-xs {
+  width: $screen-xs-min;
+}
+
+.container-sm {
+  width: $screen-sm-min;
+}
