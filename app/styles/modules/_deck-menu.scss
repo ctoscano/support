@@ -1,0 +1,80 @@
+.deck-menu {
+  position: relative;
+  overflow: hidden;
+  background: white;
+  
+
+  .row .option {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+.card-wrapper {
+  color: $gray-darker;
+  margin: 10px;
+  padding: 0;
+  overflow: hidden;
+  font-size: 16px;
+
+  a:hover {
+    background-color: #e5e5e5;
+    text-decoration: none;
+  }
+
+  .image-holder {
+    cursor: zoom-in;
+    img {
+      width: 100%;
+      border-radius: 6px 6px 0 0;
+    }
+
+  }
+
+  .body-wrapper {
+    cursor: zoom-in;
+    background-color: $panel-default-heading-bg;
+    border-bottom: 1px solid #e5e5e5;
+    border: 1px solid #ddd;
+    border-top:none;
+
+    a {
+      padding: 10px;
+      display: block;
+      color: inherit;
+      h4 {
+        font-size: inherit;
+        color: inherit;
+      }
+    }
+  }
+
+  .footer {
+    color: $gray;
+    background-color: $panel-default-heading-bg;
+    font-size: .8em;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #ddd;
+    border-top:none;
+
+
+    a {
+      padding: 5px 10px;
+      color: inherit;
+      display: flex;
+      align-items: baseline;
+
+      img {
+        width: 2em;
+        margin-right: 5px;
+
+      }
+
+      h5 {
+        font-size: inherit;
+        color: inherit;
+      }
+    }
+  }
+
+}
