@@ -2,6 +2,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+@import "plugin/_chrome-flat.scss";
 @import "_layout.scss";
 @import "modules/_ah2p.scss";
 @import "modules/_instruction.scss";

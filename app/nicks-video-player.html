@@ -76,8 +76,10 @@
         </div>
     </div>
 
-    <div id="awesome" class="body">
+    <div id="awesome" class="body chrome-flat">
+      <div>
         <iframe src="http://ntoscano.github.io/membrightVideoPlayer/app/index.html" frameborder="0"></iframe>
+      </div>
     </div>
 
     <div id="contribute" class="bottom" ng-controller="PledgeCtrl">
@@ -145,7 +147,7 @@
                     can get a job. The more supporters I have, the better story I'll have
                     for my college application :)
                 <p>
-                <div class="form-inline">
+                <div class="form">
                     <div class="form-group">
                         <label for="formPledge">Pledge</label>
                         <div class="input-group">
@@ -153,22 +155,18 @@
                             <input ng-bind="pledge.support.value" type="text" class="form-control" id="formPledge" placeholder="ex. $10.00 or $0">
                         </div>
                     </div>
-                    <p>
                         <div class="radio">
                             <label>
                                 <input ng-bind="pledge.support.type" type="radio" name="optionsRadios" id="optionsRadios1" value="lend" checked>
                                 "OK, I can help lend you some cash!"
                             </label>
                         </div>
-                    </p>
-                    <p>
                         <div class="radio">
                             <label>
                                 <input ng-bind="pledge.support.type" type="radio" name="optionsRadios" id="optionsRadios2" value="donate">
                                 "Here is a gift! Put it to good use."
                             </label>
                         </div>
-                    </p>
                 </div>
             </div>
             <div class="help-option col-md-4">

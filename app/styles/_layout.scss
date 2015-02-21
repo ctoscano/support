@@ -65,9 +65,9 @@ body {
 
 
 .container-xs {
-  width: $screen-xs-min;
+  max-width: $screen-xs-min;
 }
 
 .container-sm {
-  width: $screen-sm-min;
+  max-width: $screen-sm-min;
 }

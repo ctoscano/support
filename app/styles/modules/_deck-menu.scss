@@ -2,17 +2,16 @@
   position: relative;
   overflow: hidden;
   background: white;
-  
+  padding: 20px;
 
-  .row .option {
-    margin-top: 25px;
-    margin-bottom: 25px;
+  .row {
+    margin-top: 40px;
   }
 }
 
 .card-wrapper {
   color: $gray-darker;
-  margin: 10px;
+  margin: 10px 0;
   padding: 0;
   overflow: hidden;
   font-size: 16px;
@@ -23,10 +22,12 @@
   }
 
   .image-holder {
-    cursor: zoom-in;
-    img {
-      width: 100%;
-      border-radius: 6px 6px 0 0;
+    a {
+      cursor: zoom-in;
+      img {
+        width: 100%;
+        border-radius: 6px 6px 0 0;
+      }
     }
 
   }
@@ -34,7 +35,6 @@
   .body-wrapper {
     cursor: zoom-in;
     background-color: $panel-default-heading-bg;
-    border-bottom: 1px solid #e5e5e5;
     border: 1px solid #ddd;
     border-top:none;
 
