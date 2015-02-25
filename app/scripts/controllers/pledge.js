@@ -30,7 +30,6 @@ angular.module('campaignntApp')
         $scope.email = '';
         $scope.showThanks = false;
         $scope.showValidation = false;
-        window.scope123 = $scope;
 
         $scope.go = function (pledge) {
             $scope.showValidation = true;
