@@ -76,9 +76,10 @@
         </div>
     </div>
 
-    <div id="awesome" class="body chrome-flat">
+    <div id="awesome" class="body chrome-flat" ng-model="target">
+      <a target="_blank" href="{{target}}" class="location">{{ target }}</a>
       <div>
-        <embed-deck></embed-deck>
+        <embed-deck target="target"></embed-deck>
       </div>
     </div>
 
