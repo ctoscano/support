@@ -77,7 +77,7 @@
     </div>
 
     <div id="awesome" class="body chrome-flat" ng-model="target">
-      <a target="_blank" href="{{target}}" class="location">{{ target }}</a>
+      <a target="_blank" href="{{target}}" class="location">{{ target || 'http://...'}}</a>
       <div>
         <embed-deck target="target"></embed-deck>
       </div>
@@ -232,7 +232,7 @@
                 <div class="col-md-6">
                     <p>
                         Hack Reactor is among the most rigorous and most prestigious hacker schools out there. It boast
-                        a 98% placement rate and an average starting salary of $102,000. It also has a 3% acceptance rate
+                        a 98% placement rate and an average starting salary of $105,000. It also has a 3% acceptance rate
                         and the most expensive cost of tuition.
                     </p>
                     <p>

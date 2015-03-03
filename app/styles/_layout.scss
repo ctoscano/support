@@ -71,3 +71,13 @@ body {
 .container-sm {
   max-width: $screen-sm-min;
 }
+
+.section {
+  margin-top: 50px;
+}
+
+@media (max-width: $screen-sm-min) {
+  .section {
+    margin-top: 25px;
+  }
+}

@@ -7,6 +7,17 @@
  * # embedDeck
  */
 angular.module('campaignntApp')
+  .directive('embedBrowser', ['$location', function ($location) {
+    return {
+      template: '<a href="{{target}}" target="_blank" class="location">{{target}}</a><div><iframe frameborder="0" ></iframe></div>',
+      transclude: true,
+      scope : { target : '@' },
+      restrict: 'C',
+      link: function postLink(scope, element, attrs) {
+        element.find('iframe').attr('src', scope.target);
+      }
+    };
+  }])
   .directive('embedDeck', ['$location', function ($location) {
     return {
       template: '<iframe frameborder="0"></iframe>',
