@@ -1,12 +1,15 @@
-
+$layout-margin:50px;
+$layout-margin-sm:15px;
 
 body {
   background: $gray-lighter;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .body iframe {
   width: 100%;
-  height: 850px;
+  height: 900px;
 }
 .body {
   @include box-shadow(#000 0px 0px 30px);
@@ -16,12 +19,14 @@ body {
 
 .top, .bottom {
   background: #FFF;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: $layout-margin;
+  margin-right: $layout-margin;
 
   border-left: 1px solid $gray-light;
   border-right: 1px solid $gray-light;
-  padding-top:80px;
+  padding-top: 80px;
+  padding-left: 5px;
+  padding-right: 5px;
 
 }
 
@@ -50,12 +55,11 @@ body {
 
 @media (max-width: $screen-md-min) {
   .top {
-    margin-top: 5px;
     padding-top: 25px;
   }
   .top, .bottom {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: $layout-margin-sm;
+    margin-right: $layout-margin-sm;
     padding-bottom: 25px;
   }
   .body {
@@ -74,6 +78,8 @@ body {
 
 .section {
   margin-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media (max-width: $screen-sm-min) {

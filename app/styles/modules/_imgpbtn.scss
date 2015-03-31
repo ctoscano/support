@@ -1,0 +1,10 @@
+.imgpbtn {
+  @media (max-width: $screen-md-min) {
+    max-width: 500px;
+    margin:0 auto;
+  }
+
+  img {
+    margin-bottom: 15px;
+  }
+}

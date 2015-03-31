@@ -1,0 +1,18 @@
+.home-link {
+  position: absolute;
+  top: 0;
+  margin-left:$layout-margin;
+
+  @media (max-width: $screen-md-min) {
+    margin-left: $layout-margin-sm;
+  }
+
+  img.profile {
+    width:2em;
+    height:2em;
+    margin:0;
+  }
+  a {
+    padding: 3px;
+  }
+}

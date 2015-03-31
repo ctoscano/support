@@ -19,8 +19,13 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <div class="home-link">
+      <a href="/"><img class="img-responsive profile" src="./images/cesar.png" /></a>
+      <a href="/">go to ctoscano.com</a>
+    </div>
+
     <!-- Add your site or application content here -->
-    <div class="top container-fluid">
+    <div class="top clearfix">
         <div class="">
             <div class="row">
                 <div class="col-md-5 clearfix">
@@ -32,8 +37,8 @@
                         <div style="overflow: hidden">
                             <h1>Hi, I'm Nick.</h1>
                             <p>
-                                I clowned around in high school <br class=""/>
-                                but now I'm working hard <br class=""/>
+                                I just graduated from high school <br class=""/>
+                                and I'm working real hard <br class=""/>
                                 to get into a good college.
                             </p>
                         </div>
@@ -43,12 +48,16 @@
                     <div class="center-block" style="max-width: 450px">
                         <h3>I made this for You</h3>
                         <p>
-                            I built this web app to make educational videos better by adding flash cards
-                            for the parts I want to remember.
+                            I'm learning a lot by watching videos on YouTube, but I need an easy way to
+                            remember what the videos taught me.
                         </p>
                         <p>
-                            As you watch, the app will show you the flash card that goes with that part of the video.
-                            <strong>Click a card</strong> to jump to that part of the video.
+                            I built this app to help people make the most of educational videos by creating a timeline of
+                            flashcards based on the video.
+                        </p>
+                        <p>
+                            As you watch, the timeline will point out important information. You can <storng>click</storng>
+                            on the timeline to watch that part of the video and test yourself to see if you remember.
                         </p>
                         <p>
                             Please tell me what you think!!!
@@ -63,13 +72,13 @@
 
               <div class="text-center">
                   <h3 class="instruction">
-                    <span class="bg-circle">1</span> <a href="#awesome">Check out my app</a>
+                    <span class="bg-circle">1</span> <a href="##awesome">Check out my app</a>
                   </h3>
                   <h3 class="instruction">
-                    <span class="bg-circle">2</span> <a href="#contribute">Help me go to college</a>
+                    <span class="bg-circle">2</span> <a href="##contribute">Help me go to college</a>
                   </h3>
                   <h3 class="instruction">
-                    <span class="bg-circle">3</span> <a href="#tools">See what I learned to build this app</a>
+                    <span class="bg-circle">3</span> <a href="##tools">See what I learned to build this app</a>
                   </h3>
               </div>
             </div>
@@ -84,7 +93,7 @@
     </div>
 
     <div id="contribute" class="bottom" ng-controller="PledgeCtrl">
-        <div class="center-block" style="max-width:700px; padding: 0 25px">
+        <div class="hidden center-block" style="max-width:700px; padding: 0 25px">
             <div class="text-center visible-xs visible-sm">
                 <img class="profile" src="./images/crab.png"/>
             </div>
@@ -113,10 +122,11 @@
         <form name="pledgeForm" novalidate="" class="row help-options">
             <div class="help-option col-md-4">
                 <div>
-                    <h4><span class="bg-circle">1</span> Offer Encouragement</h4>
+                    <h4><span class="bg-circle">1</span> Tell me what you think!</h4>
                 </div>
                 <p>
-                    Tell me what you think! Wish me luck! Ask me to share what I'm learning about. Tell me you want me keep you up to date.
+                    I'd like to hear your suggestions for the app, or make flashcards about things you think I
+                    should know.
                 </p>
                 <div class="inline-form" action="">
                     <div class="form-group">
@@ -142,32 +152,23 @@
                     <h4><span class="bg-circle">2</span> Lend Support</h4>
                 </div>
                 <p>
-                    I have until April 1st, 2015 to come up with $17,780 :/
-                </p><p>
-                    I'm trying to borrowing the money from friends and family until I
-                    can get a job. The more supporters I have, the better story I'll have
-                    for my college application :)
+                    I have life changing opportunity to go to a prestigious code academy in San Francisco, but it is expensive.
+                    I need to find a way to borrow $8,000 to cover the rest of the tuition by May 1st.
+                </p>
                 <p>
+                    Hack Reactor has a 3% acceptance rate, and I got in. Graduates go on to be engineers at companies like Google and
+                    Facebook. It can change my life.
+                <p>
+                <p>
+
+                </p>
                 <div class="form">
-                    <div class="form-group">
-                        <label for="formPledge">Pledge</label>
-                        <div class="input-group">
-                            <div class="input-group-addon">$</div>
-                            <input ng-bind="pledge.support.value" type="text" class="form-control" id="formPledge" placeholder="ex. $10.00 or $0">
-                        </div>
-                    </div>
-                        <div class="radio">
-                            <label>
-                                <input ng-bind="pledge.support.type" type="radio" name="optionsRadios" id="optionsRadios1" value="lend" checked>
-                                "OK, I can help lend you some cash!"
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input ng-bind="pledge.support.type" type="radio" name="optionsRadios" id="optionsRadios2" value="donate">
-                                "Here is a gift! Put it to good use."
-                            </label>
-                        </div>
+                      <div class="radio">
+                          <label>
+                              <input ng-bind="pledge.support.type" type="checkbox" name="optionsRadios" id="optionsRadios1" value="lend" checked>
+                              "OK, I think can help you borrow money for tuition! Email me about it."
+                          </label>
+                      </div>
                 </div>
             </div>
             <div class="help-option col-md-4">
@@ -203,10 +204,55 @@
 
     <div class="bottom about">
         <div class="container container-sm">
-            <h3>About</h3>
-            <div class="row">
+            <h3>Best Resources</h3>
+            <div class="imgpbtn row">
                 <div class="col-md-6 text-center">
-                    <img class="img-responsive" src="./images/Crash_Course_Youtube_logo.png" alt=""/>
+                    <img class="" src="./images/Learning-How-to-Learn-Logo-with-text.png" alt=""/>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        The most important thing for a student to learn is <strong>how</strong> to learn. This Coursera
+                        course will teach you learning techniques that can make anyone a strong, confident learner.
+                    </p>
+                    <p>
+                         "Using these approaches, no matter what your skill levels in topics you would like to master,
+                         you can change your thinking and change your life. [...] If you’ve ever wanted to become better
+                         at anything, this course will help serve as your guide."
+                    </p>
+                    <p>
+                        <a class="btn btn-default" href="https://www.coursera.org/learn/learning-how-to-learn">Learn More</a>
+                    </p>
+                </div>
+            </div>
+            <br />
+            <div class="imgpbtn row">
+                <div class="col-md-6 text-center">
+                    <img class="" src="./images/SATBlogpost.png" alt=""/>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        Khan Academy teamed up with the College Board to create the best SAT Test Prep and make it
+                        available to everyone, online, and free.
+                    </p>
+                    <p>
+                        "Unlike other test prep, the resources on Khan Academy will be developed through a close
+                        collaboration with the authors of the SAT themselves. With this partnership, our goal is to
+                        ensure that students have a deep grasp of underlying fundamentals so they can succeed on the SAT,
+                        in college, and beyond."
+                    </p>
+                    <p>
+                        <a class="btn btn-default" href="https://www.khanacademy.org/test-prep/sat/overview-sat-prep/a/khan-academy-partners-with-college-board-to-provide-free-sat-prep">Learn More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom about">
+        <div class="container container-sm">
+            <h3>About</h3>
+            <div class="imgpbtn row">
+                <div class="col-md-6 text-center">
+                    <img class="" src="./images/Crash_Course_Youtube_logo.png" alt=""/>
                 </div>
                 <div class="col-md-6">
                     <p>
@@ -220,14 +266,14 @@
                     </p>
                     <p>
                         <a class="btn btn-default" href="https://www.youtube.com/user/crashcourse">Watch Videos</a>
-                        <a class="btn btn-primary" href="https://subbable.com/crashcourse">Donate</a>
+                        <a class="btn btn-default" href="https://www.patreon.com/crashcourse">Learn More</a>
                     </p>
                 </div>
             </div>
             <br />
-            <div class="row">
+            <div class="imgpbtn row">
                 <div class="col-md-6 text-center">
-                    <img class="img-responsive" src="./images/hrhq-logo@2x.png" alt=""/>
+                    <img class="" src="./images/hrhq-logo@2x.png" alt=""/>
                 </div>
                 <div class="col-md-6">
                     <p>
@@ -239,6 +285,7 @@
                         Google, Facebook, LinkedIn, Optimizely hire Hack Reactor alumni.
                     </p>
                     <p>
+                        <a class="btn btn-default" href="http://www.hackreactor.com/curriculum/">See Curriculum</a>
                         <a class="btn btn-default" href="http://techcrunch.com/2013/09/02/hack-reactor-coding-bootcamp/">Learn More</a>
                     </p>
                 </div>
@@ -251,9 +298,9 @@
     <div id="tools" class="bottom about last">
         <div class="container container-sm">
             <h3>Tools and Tech</h3>
-            <div class="row">
+            <div class="imgpbtn row">
                 <div class="col-md-6 text-center">
-                    <img class="img-responsive" src="./images/AngularJS-large.png" alt=""/>
+                    <img class="" src="./images/AngularJS-large.png" alt=""/>
                 </div>
                 <div class="col-md-6">
                     <p>
@@ -270,9 +317,9 @@
                 </div>
             </div>
             <br/>
-            <div class="row">
+            <div class="imgpbtn row">
                 <div class="col-md-6 text-center">
-                    <img class="img-responsive" src="./images/bootstrap.png" alt=""/>
+                    <img class="" src="./images/bootstrap.png" alt=""/>
                 </div>
                 <div class="col-md-6">
                     <p>
@@ -284,9 +331,9 @@
                 </div>
             </div>
             <br/>
-            <div class="row">
+            <div class="imgpbtn row">
                 <div class="col-md-6 text-center">
-                    <img class="img-responsive" src="./images/eloquent_javascript.png" alt=""/>
+                    <img class="" src="./images/eloquent_javascript.png" alt=""/>
                 </div>
                 <div class="col-md-6">
                     <p>

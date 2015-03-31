@@ -3,6 +3,13 @@ a.ah2p, a.ah2p:hover {
   text-decoration: none;
   display: block;
   padding: 1px 10px;
+
+  max-width: 450px;
+  margin: 0 auto;
+
+  @media (max-width: $screen-md-min) {
+    padding: 0;
+  }
 }
 
 a.ah2p:hover {
